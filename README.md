@@ -11,3 +11,5 @@
 
 #### 请配合crontab使用 每小时自动查找并清除60天之前的日志 示范:
 #### 1 * * * * /usr/local/bin/php /root/auto_clear_log.php -path /home/wwwroot/ -time 60
+
+#### 顺便说一句,其实一条shell语句就能搞定 find /var/www/html/ -mtime +10 -name "*.log" -exec rm -rf {} \;
