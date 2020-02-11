@@ -8,3 +8,6 @@
 
 默认删除的日志后缀名为.log
 如果要添加日志文件后缀名 请在第20行添加
+
+#### 请配合crontab使用 每小时自动查找并清除60天之前的日志 示范:
+#### 1 * * * * /usr/local/bin/php /root/auto_clear_log.php -path /home/wwwroot/ -time 60
